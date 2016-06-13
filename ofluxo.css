@@ -1,0 +1,119 @@
+body {
+  background-image: url(bg.png);
+  background-size: cover;
+  background-color: #000000;
+  font-family: monospace;;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+h1 {
+  font-family: PlainBlackWide;
+  font-size: 46px;
+  margin: 0;
+  text-transform:lowercase;
+
+}
+h2 {
+  font-size: 22px;
+  margin: 0px 0px 5px 0px;
+  text-transform:uppercase;;
+}
+h3 {
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+  text-transform:uppercase;;
+}
+a {
+  color: white;
+}
+
+
+div#main_canvas_container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'PlainBlackWide';
+  src: url('font/PlainBlackWide.eot'); /* IE9 Compat Modes */
+  src: url('font/PlainBlackWide.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/PlainBlackWide.woff') format('woff'), /* Pretty Modern Browsers */
+  url('font/PlainBlackWide.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+div#simple_preloader_container > div > div{
+  color: transparent;
+  border: transparent;
+}
+
+#safe-vid {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#control-message {
+  position: absolute;
+  z-index: 9999;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 5px 10px;
+  box-sizing: content-box;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: small;
+  border: 2px solid black;
+  font-family: monospace;
+}
+#title {
+  position: absolute;
+  z-index: 9998;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*background: rgba(255, 255, 255, 0.79);*/
+  padding: 10px 30px;
+  box-sizing: content-box;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
+#footer {
+  position: absolute;
+  z-index: 9997;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  /*background: rgba(255, 255, 255, 0.79);*/
+  padding: 10px 30px;
+  box-sizing: content-box;
+  text-align: center;
+  color: white;
+  width:100%;
+}
+
+@media screen and (max-width: 600px) {
+h1 {
+  font-family: PlainBlackWide;
+  font-size: 36px;
+  margin: 0;
+  text-transform:lowercase;
+
+}
+h2 {
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+}
+h3 {
+  font-size: 12px;
+  margin: 0;
+}
+}
